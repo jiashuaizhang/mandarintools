@@ -104,42 +104,23 @@ public class ChineseNumbers {
         AFTER_WAN_DIGITS_MAP.put("京", 10000000000000000L);
 
         TRADITIONAL_TO_FORMAL_MAP.put("一", "壹");
-        TRADITIONAL_TO_FORMAL_MAP.put("一", "壹");
-        TRADITIONAL_TO_FORMAL_MAP.put("七", "柒");
         TRADITIONAL_TO_FORMAL_MAP.put("七", "柒");
         TRADITIONAL_TO_FORMAL_MAP.put("三", "參");
-        TRADITIONAL_TO_FORMAL_MAP.put("三", "參");
-        TRADITIONAL_TO_FORMAL_MAP.put("九", "玖");
         TRADITIONAL_TO_FORMAL_MAP.put("九", "玖");
         TRADITIONAL_TO_FORMAL_MAP.put("二", "貳");
-        TRADITIONAL_TO_FORMAL_MAP.put("二", "貳");
-        TRADITIONAL_TO_FORMAL_MAP.put("五", "伍");
         TRADITIONAL_TO_FORMAL_MAP.put("五", "伍");
         TRADITIONAL_TO_FORMAL_MAP.put("億", "億");
-        TRADITIONAL_TO_FORMAL_MAP.put("億", "億");
-        TRADITIONAL_TO_FORMAL_MAP.put("兆", "兆");
         TRADITIONAL_TO_FORMAL_MAP.put("兆", "兆");
         TRADITIONAL_TO_FORMAL_MAP.put("兩", "兩");
-        TRADITIONAL_TO_FORMAL_MAP.put("兩", "兩");
-        TRADITIONAL_TO_FORMAL_MAP.put("八", "捌");
         TRADITIONAL_TO_FORMAL_MAP.put("八", "捌");
         TRADITIONAL_TO_FORMAL_MAP.put("六", "陸");
-        TRADITIONAL_TO_FORMAL_MAP.put("六", "陸");
-        TRADITIONAL_TO_FORMAL_MAP.put("十", "拾");
         TRADITIONAL_TO_FORMAL_MAP.put("十", "拾");
         TRADITIONAL_TO_FORMAL_MAP.put("千", "仟");
-        TRADITIONAL_TO_FORMAL_MAP.put("千", "仟");
-        TRADITIONAL_TO_FORMAL_MAP.put("四", "肆");
         TRADITIONAL_TO_FORMAL_MAP.put("四", "肆");
         TRADITIONAL_TO_FORMAL_MAP.put("百", "佰");
-        TRADITIONAL_TO_FORMAL_MAP.put("百", "佰");
-        TRADITIONAL_TO_FORMAL_MAP.put("萬", "萬");
         TRADITIONAL_TO_FORMAL_MAP.put("萬", "萬");
         TRADITIONAL_TO_FORMAL_MAP.put("負", "負");
-        TRADITIONAL_TO_FORMAL_MAP.put("負", "負");
         TRADITIONAL_TO_FORMAL_MAP.put("零", "零");
-        TRADITIONAL_TO_FORMAL_MAP.put("零", "零");
-        TRADITIONAL_TO_FORMAL_MAP.put("點", "點");
         TRADITIONAL_TO_FORMAL_MAP.put("點", "點");
         TRADITIONAL_TO_PINYIN_MAP.put("一", "yi1");
         TRADITIONAL_TO_PINYIN_MAP.put("七", "qi1");
@@ -471,7 +452,7 @@ public class ChineseNumbers {
     }
 
     public static void main(String[] args) {
-        double total = ChineseNumbers.chineseToEnglishFull("四千五百零四万四千三百一十八");
+        long total = (long) ChineseNumbers.chineseNumberToEnglish("一万四千五百六十六");
         LOGGER.debug("{}", total);
     }
 }
